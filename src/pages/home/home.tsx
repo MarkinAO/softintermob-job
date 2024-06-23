@@ -6,15 +6,17 @@ import { Description } from "@widgets/index";
 import { Partners } from "@widgets/index";
 import { FAQwidget } from "@widgets/index";
 import { Technologies } from "@widgets/index";
+import { Blog } from "@widgets/index";
 
 export const Home = () => {
   return (
     <>
       <Header />
       <main className={style.container}>
-        <About />
-        <Technologies />
+        <About />        
         <Description />
+        <Technologies />
+        <Blog />
         <Partners />
         <FAQwidget />
       </main>
