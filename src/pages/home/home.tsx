@@ -5,6 +5,7 @@ import { About } from "@widgets/index";
 import { Description } from "@widgets/index";
 import { Partners } from "@widgets/index";
 import { FAQwidget } from "@widgets/index";
+import { Technologies } from "@widgets/index";
 
 export const Home = () => {
   return (
@@ -12,6 +13,7 @@ export const Home = () => {
       <Header />
       <main className={style.container}>
         <About />
+        <Technologies />
         <Description />
         <Partners />
         <FAQwidget />
