@@ -1,0 +1,17 @@
+.content {
+  display: flex;
+
+  .textBlock {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.textBlock:first-child {
+  padding-right: 40px;
+  border-right: 1px solid #ffffff;
+}
+
+.textBlock:last-child {
+  padding-left: 40px;
+}

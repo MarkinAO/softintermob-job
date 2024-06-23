@@ -1,0 +1,20 @@
+.container {
+    width: 100%;
+    overflow: hidden;
+    .box {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        width: 200%;
+        animation: move 5s linear infinite;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - 85px));
+    }
+}

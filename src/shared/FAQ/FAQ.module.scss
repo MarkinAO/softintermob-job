@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  color: #ffffff;
+  cursor: pointer;
+
+  .line {
+    border-radius: 24px;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(169deg, #84103b 0%, #6b32e7 50%, #3c1c81 100%);
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 32px;
+
+    .arrow {
+      width: 38px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("./arrow.svg");
+      transform-origin: center;
+    }
+  }
+
+  .text {
+    height: 0;
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    overflow: hidden;
+  }
+}

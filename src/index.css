@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  color: inherit;
+}
+
+button,
+button:focus,
+input,
+input:focus {
+  border: none;
+  outline: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+}
+
+body {
+  background: #010101;
+}

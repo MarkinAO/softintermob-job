@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .video {
+        max-width: 100%;
+    }
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}

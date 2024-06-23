@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 380px;
+
+  .header {
+    height: 191px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px 40px 0 0;
+    background: linear-gradient(169deg, #84103b 0%, #6b32e7 50%, #3c1c81 100%);
+    z-index: 1;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: -75px;
+    padding: 100px 31px 52px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;    
+
+    .title {
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .text {
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+}
