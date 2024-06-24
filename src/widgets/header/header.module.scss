@@ -1,6 +1,9 @@
-.container {
-    position: sticky;
-    top: 0;
+.wrap {
+  position: sticky;
+  top: 0;
+  background: #010101;
+  z-index: 999;
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,10 +11,9 @@
     margin: 0 auto;
     max-width: 1180px;
     background: #010101;
-    z-index: 999;
-
     .links {
-        display: flex;
-        gap: 20px;
+      display: flex;
+      gap: 20px;
     }
+  }
 }

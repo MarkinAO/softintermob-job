@@ -8,6 +8,7 @@ import { FAQwidget } from "@widgets/index";
 import { Technologies } from "@widgets/index";
 import { Blog } from "@widgets/index";
 import { Vacancy } from "@widgets/index";
+import { Portfolio } from "@widgets/index";
 
 export const Home = () => {
   return (
@@ -15,8 +16,9 @@ export const Home = () => {
       <Header />
       <main className={style.container}>
         <About />
-        <Vacancy />
+        <Portfolio />        
         <Description />
+        <Vacancy />
         <Technologies />
         <Blog />
         <Partners />

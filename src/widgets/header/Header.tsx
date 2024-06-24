@@ -16,7 +16,8 @@ const links = [
 
 export const Header = () => {
   return (
-    <header className={style.container}>
+    <header className={style.wrap}>
+      <div className={style.container}>
       <div className={style.logo}>
         <Logo />
       </div>
@@ -30,6 +31,8 @@ export const Header = () => {
         })}
       </ul>
       <Button text="Присоединяйся" onClick={() => {}} />
+      </div>
+      
     </header>
   );
 };
