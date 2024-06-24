@@ -6,3 +6,4 @@ export { Partners } from "./partners/partners";
 export { FAQwidget } from "./FAQ/FAQwidget";
 export { Technologies } from "./technologies/technologies";
 export { Blog } from "./blog/blog";
+export { Vacancy } from "./vacancy/vacancy";

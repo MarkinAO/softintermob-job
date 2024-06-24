@@ -7,13 +7,15 @@ import { Partners } from "@widgets/index";
 import { FAQwidget } from "@widgets/index";
 import { Technologies } from "@widgets/index";
 import { Blog } from "@widgets/index";
+import { Vacancy } from "@widgets/index";
 
 export const Home = () => {
   return (
     <>
       <Header />
       <main className={style.container}>
-        <About />        
+        <About />
+        <Vacancy />
         <Description />
         <Technologies />
         <Blog />

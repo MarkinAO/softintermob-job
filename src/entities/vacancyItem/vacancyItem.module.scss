@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  padding: 36px 54px;
+  width: 559px;
+  height: 192px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  background: #1b1b1b;
+
+  .title {
+    font-weight: 600;
+    font-size: 32px;
+  }
+}
