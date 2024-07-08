@@ -8,3 +8,4 @@ export { Technologies } from "./technologies/technologies";
 export { Blog } from "./blog/blog";
 export { Vacancy } from "./vacancy/vacancy";
 export { Portfolio } from "./portfolio/portfolio";
+export { Form } from "./form/form";

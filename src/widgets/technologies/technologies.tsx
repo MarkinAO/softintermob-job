@@ -6,7 +6,7 @@ import { mock as technologies } from "./mock/mock";
 
 export const Technologies = () => {
   return (
-    <Block title="FAQ">
+    <Block title="Технологии">
       <div className={style.container}>
         {technologies.map((el, i) => {
           return <Tehnology title={el.title} logo={el.logo} key={i} />;

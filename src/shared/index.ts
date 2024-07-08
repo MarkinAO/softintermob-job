@@ -6,3 +6,5 @@ export { Card } from "./card/Card";
 export { Logo } from "./logo/Logo";
 export { Tag } from "./tag/Tag";
 export { Tehnology } from "./tehnology/tehnology";
+export { useStore } from "./store/store";
+export type { Project } from "./model/model";

@@ -10,6 +10,7 @@
       width: 180px;
       height: 180px;
       overflow: hidden;
+      cursor: pointer;
       img {
         max-width: 100%;
       }
@@ -18,5 +19,8 @@
   .rowCenter {
     width: 1380px;
     transform: translateX(-90px);
+    .slide {
+      cursor: pointer;
+    }
   }
 }
