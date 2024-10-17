@@ -68,8 +68,9 @@ export const Form = () => {
     }, 5000);
   };
 
-  const onSubmit: SubmitHandler<FormFields> = async (data) => {
+  const onSubmit: SubmitHandler<FormFields> = async (data) => {    
     if (isValid) {
+      console.log(data)
       success();
       reset();      
     }
