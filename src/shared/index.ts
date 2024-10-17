@@ -8,3 +8,4 @@ export { Tag } from "./tag/Tag";
 export { Tehnology } from "./tehnology/tehnology";
 export { useStore } from "./store/store";
 export type { Project } from "./model/model";
+export { Popup } from "./popup/popup";

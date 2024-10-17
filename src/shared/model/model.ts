@@ -4,3 +4,21 @@ export type Project = {
   description: string;
   video: string;
 };
+
+export type Vacancy = {
+  title: string;
+  tags: string[];
+  description: {
+    title: string;
+    text: string;
+  }[];
+};
+
+export type Article = {
+  title: string;
+  image: string;
+  description: {
+    title: string;
+    text: string;
+  }[];
+};
