@@ -1,7 +1,7 @@
 import style from "./header.module.scss";
 import { Logo } from "@shared/index";
 import { Button } from "@shared/index";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const links = [
   { title: "О нас", link: "about" },
@@ -39,8 +39,7 @@ export const Header = () => {
             );
           })}
         </ul>
-        <Link
-          activeClass={style.active}
+        <Link          
           to="join"
           spy={true}
           smooth={true}
