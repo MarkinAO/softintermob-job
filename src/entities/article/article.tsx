@@ -8,27 +8,16 @@ interface IArticle {
 }
 
 export const Article = ({ props }: IArticle) => {
-  const { title, image, description } = props;
-  const togglePopup = useStore((state) => state.toggleProjectPopup);
+  const { title, image, text } = props;
+  const togglePopup = useStore((state) => state.toggleArticlePopup);
   return (
-    <Popup position="absolute" onClick={togglePopup}>
+    <Popup position="fixed" onClick={togglePopup}>
       <div className={style.container}>
         <div className={style.title}>{title}</div>
         <div className={style.image}>
           <img src={image} alt="" />
         </div>
-        <div className={style.description}>
-          {description.map((el, i) => {
-            return (
-              <div key={i}>
-                <p className={style.title}>{el.title}</p>
-                <p className={style.text}>
-                  <pre>{el.text}</pre>
-                </p>
-              </div>
-            );
-          })}
-        </div>
+        <div className={style.text}>{text}</div>
       </div>
     </Popup>
   );

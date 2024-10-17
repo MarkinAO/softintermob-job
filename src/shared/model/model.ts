@@ -17,8 +17,5 @@ export type Vacancy = {
 export type Article = {
   title: string;
   image: string;
-  description: {
-    title: string;
-    text: string;
-  }[];
+  text: string;
 };

@@ -7,6 +7,8 @@ interface IStore {
   toggleProjectPopup: () => void;
   vacancyPopup: boolean;
   toggleVacancyPopup: () => void;
+  articlePopup: boolean;
+  toggleArticlePopup: () => void;
   mainVideo: string;
   setMainVideo: (video: string) => void;
   vacancyData: TVacancy[];
@@ -19,6 +21,8 @@ export const useStore = create<IStore>()(
     toggleProjectPopup: () => set((state) => ({ projectPopup: !state.projectPopup })),
     vacancyPopup: false,
     toggleVacancyPopup: () => set((state) => ({ vacancyPopup: !state.vacancyPopup })),
+    articlePopup: false,
+    toggleArticlePopup: () => set((state) => ({ articlePopup: !state.articlePopup })),
     mainVideo: "https://rutube.ru/play/embed/71e51b36354b8ad95b6bd82e2c78e229/",
     setMainVideo: (video: string) => set(() => ({ mainVideo: video })),
     vacancyData: [],
