@@ -31,7 +31,7 @@ export const Blog = () => {
   return (
     <>
       {articlePopup && <Article props={article} />}
-      <Block title="FAQ">
+      <Block title="БЛОГ" id="blog" >
         <div>
           <Swiper {...swiperParams}>
             {articles.map((el, i) => (

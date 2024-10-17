@@ -4,7 +4,7 @@ import { socials, email, phone, address } from "./assets/data";
 
 export const Footer = () => {
   return (
-    <footer className={style.container}>
+    <footer className={style.container} id="contacts">
       <div className={style.box}>
         <div className={style.logo}>
           <Logo />

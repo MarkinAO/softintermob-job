@@ -15,5 +15,16 @@
       display: flex;
       gap: 20px;
     }
+    .link {
+      cursor: pointer;
+      padding-bottom: 1px;
+    }
+    .link:hover {
+      padding-bottom: 0;
+      border-bottom: 1px solid #ffffff;
+    }
+    .active {
+      border-bottom: 1px solid #ffffff;
+    }
   }
 }

@@ -3,7 +3,7 @@ import { Button, Input } from "@shared/index";
 
 export const Form = () => {
   return (
-    <section className={style.main}>
+    <section className={style.main} id="join">
       <div className={style.background}></div>
       <div className={style.wrap}>
         <div className={style.container}>

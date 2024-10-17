@@ -32,7 +32,7 @@ export const Portfolio = () => {
   return (
     <>
       {projectPopup && <Project props={project} />}
-      <Block title="портфолио">
+      <Block title="портфолио" id="portfolio" >
         <div className={style.container}>
           <div className={style.row}>
             <Swiper {...swiperParams}>

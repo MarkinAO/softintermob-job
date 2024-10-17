@@ -17,13 +17,13 @@ export const Home = () => {
       <Header />
       <main className={style.container}>
         <About />
-        <Portfolio />
         <Description />
+        <Portfolio />        
         <Vacancy />
         <Technologies />
         <Blog />
-        <Partners />
         <FAQwidget />
+        <Partners />        
         <Form />
       </main>
       <Footer />

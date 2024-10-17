@@ -1,38 +1,55 @@
 import style from "./header.module.scss";
 import { Logo } from "@shared/index";
 import { Button } from "@shared/index";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const links = [
-  { title: "О нас", link: "" },
-  { title: "Портфолио", link: "" },
-  { title: "Отделы", link: "" },
-  { title: "Вакансии", link: "" },
-  { title: "Технологии", link: "" },
-  { title: "Блог", link: "" },
-  { title: "FAQ", link: "" },
-  { title: "Партнеры", link: "" },
-  { title: "Контакты", link: "" },
+  { title: "О нас", link: "about" },
+  { title: "Портфолио", link: "portfolio" },
+  { title: "Вакансии", link: "vacancy" },
+  { title: "Технологии", link: "technologies" },
+  { title: "Блог", link: "blog" },
+  { title: "FAQ", link: "FAQ" },
+  { title: "Партнеры", link: "partners" },
+  { title: "Контакты", link: "contacts" },
 ];
 
 export const Header = () => {
   return (
     <header className={style.wrap}>
       <div className={style.container}>
-      <div className={style.logo}>
-        <Logo />
+        <div className={style.logo}>
+          <Logo />
+        </div>
+        <ul className={style.links}>
+          {links.map((el, i) => {
+            return (
+              <li className={style.link} key={i}>
+                <Link
+                  activeClass={style.active}
+                  to={el.link}
+                  spy={true}
+                  smooth={true}
+                  offset={-120}
+                  duration={500}
+                >
+                  {el.title}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+        <Link
+          activeClass={style.active}
+          to="join"
+          spy={true}
+          smooth={true}
+          offset={-120}
+          duration={500}
+        >
+          <Button text="Присоединяйся" onClick={() => {}} />
+        </Link>
       </div>
-      <ul className={style.links}>
-        {links.map((el, i) => {
-          return (
-            <li key={i}>
-              <a href={el.link}>{el.title}</a>
-            </li>
-          );
-        })}
-      </ul>
-      <Button text="Присоединяйся" onClick={() => {}} />
-      </div>
-      
     </header>
   );
 };

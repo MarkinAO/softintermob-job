@@ -37,7 +37,7 @@ export const Vacancy = ({ limit = true }: IVacancy) => {
   return (
     <>
       {vacancyPopup && <VacancyCard props={vac} />}
-      <Block title="Вакансии">
+      <Block title="Вакансии" id="vacancy">
         <div className={style.container}>
           {!allVac &&
             vacancy.map((el, i) => {

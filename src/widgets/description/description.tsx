@@ -3,7 +3,7 @@ import { Block } from "@/entities/block/block";
 
 export const Description = () => {
   return (
-    <Block title="о нас">
+    <Block title="о нас" id="about" >
       <div className={style.content}>
         <div className={style.textBlock}>
           <p>

@@ -4,7 +4,7 @@ import { logos } from "./assets/data";
 
 export const Partners = () => {
   return (
-    <Block title="Партнеры">
+    <Block title="Партнеры" id="partners">
       <div className={style.container}>
         <div className={style.box}>
           {logos.map((el, i) => {
