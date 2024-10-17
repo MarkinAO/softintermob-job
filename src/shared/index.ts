@@ -1,4 +1,3 @@
-export { Input } from "./input/input";
 export { FAQ } from "./FAQ/FAQ";
 export { CardBlog } from "./cardBlog/cardBlog";
 export { Button } from "./button/button";
